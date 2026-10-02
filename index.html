@@ -145,8 +145,7 @@ footer p{margin:0 0 10px;max-width:560px}
 footer .stamp{margin-top:26px;font-size:13px;letter-spacing:.14em;color:var(--ink-3)}
 
 /* ---------- T12 additions ---------- */
-.hero .name{font-family:var(--sans);font-size:15px;font-weight:500;letter-spacing:.32em;color:var(--ink-2);margin:0 0 22px}
-.hero h1.oneline{font-family:var(--sans);font-weight:600;font-size:clamp(30px,5vw,52px);line-height:1.32;letter-spacing:-.035em;color:var(--ink);margin:0 0 28px}
+
 
 .doors{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
 .doors a{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;font-size:15px;background:var(--card);transition:background .3s,border-color .3s}
@@ -177,6 +176,17 @@ footer .stamp{margin-top:26px;font-size:13px;letter-spacing:.14em;color:var(--in
 .lnk:hover{border-bottom-color:var(--amber)}
 .contact{display:inline-flex;align-items:center;gap:8px;margin:4px 0 14px;font-size:16px}
 
+
+/* ---------- hero + gothic (T12) ---------- */
+:root{--serif:var(--sans);--mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"D2Coding",monospace}
+.hero{padding-block:clamp(64px,12vh,120px) 56px}
+.hero .label{font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--ink-3);margin:0 0 22px}
+.hero h1.oneline{font-family:var(--sans);font-weight:800;font-size:clamp(38px,6.6vw,72px);line-height:1.18;letter-spacing:-.045em;color:var(--ink);margin:0 0 30px}
+.hero h1.oneline span{color:var(--amber)}
+@media(max-width:640px){.hero p.hi br.wide{display:none}}
+.hero p.hi{font-size:clamp(16px,2vw,18px);line-height:1.75;color:var(--ink-2);max-width:none;margin:0}
+.num .v{font-weight:800}
+.d{font-weight:700}
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -192,9 +202,9 @@ footer .stamp{margin-top:26px;font-size:13px;letter-spacing:.14em;color:var(--in
 <div class="wrap">
 
   <header class="hero">
-    <p class="name">강혜성</p>
-    <h1 class="oneline">막힌 곳이 있으면<br>뚫릴 때까지 파고드는 사람</h1>
-    <p>2016년 훈련소 5주에서 처음 '하면 되는 사람'이 됐고, 2026년 여름 안정된 자리를 나와 ALEPH 과정에서 다시 파고드는 중입니다.</p>
+    <p class="label">&gt; KANG HYESEONG / HUMAN DRILL</p>
+    <h1 class="oneline">막힌 곳이 있으면,<br><span>뚫릴 때까지 파고드는 사람.</span></h1>
+    <p class="hi">안녕하세요, 강혜성입니다.<br>2016년 훈련소 5주에서 처음 '하면 되는 사람'이 됐고, <br class="wide">2026년 여름 안정된 자리를 나와 ALEPH 과정에서 다시 파고드는 중입니다.</p>
     <nav class="doors" aria-label="바로 가기">
       <a href="#story"><span class="n">01</span>이야기</a>
       <a href="#numbers"><span class="n">02</span>숫자</a>
