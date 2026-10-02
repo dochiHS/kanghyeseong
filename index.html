@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>강혜성 — 막힌 곳이 있으면 뚫릴 때까지 파고드는 사람</title>
+<meta name="description" content="막힌 곳이 있으면 뚫릴 때까지 파고드는 사람, 강혜성. 이야기·13주 기록의 숫자·대표작·이력서.">
+<meta property="og:title" content="강혜성">
+<meta property="og:description" content="막힌 곳이 있으면 뚫릴 때까지 파고드는 사람, 강혜성. 이야기·13주 기록의 숫자·대표작·이력서.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230c0a09'/><text x='50' y='70' font-size='54' font-family='serif' font-weight='700' fill='%23e5a86a' text-anchor='middle'>K</text></svg>">
+<style>
+:root{
+  --bg:#0c0a09;
+  --ink:#f2ece4;
+  --ink-2:#b9ada0;
+  --ink-3:#7d7268;
+  --line:rgba(224,160,106,.16);
+  --card:rgba(255,247,238,.035);
+  --card-hi:rgba(255,247,238,.06);
+  --amber:#e5a86a;
+  --copper:#d1714a;
+  --serif:"Noto Serif KR",serif;
+  --sans:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--sans);font-size:17px;line-height:1.8;
+  letter-spacing:-.01em;word-break:keep-all;overflow-x:hidden;
+}
+/* ambient light */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(60vw 50vw at 12% -5%,rgba(217,125,78,.14),transparent 60%),
+    radial-gradient(50vw 45vw at 95% 20%,rgba(229,168,106,.07),transparent 60%);
+}
+/* grain */
+body::after{
+  content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.18;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+}
+.bar{position:fixed;top:0;left:0;height:2px;width:0;z-index:9;background:var(--copper)}
+.wrap{position:relative;z-index:2;max-width:1000px;margin:0 auto;padding:0 24px}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-block:96px 72px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;align-self:flex-start;
+  font-size:12.5px;letter-spacing:.2em;color:var(--amber);
+  border:1px solid var(--line);border-radius:999px;padding:7px 16px;
+  background:rgba(229,168,106,.05);margin:0 0 30px;
+}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--amber);animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+h1{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(36px,7.4vw,76px);line-height:1.26;letter-spacing:-.03em;
+  margin:0 0 34px;color:var(--ink);
+}
+.hero p{max-width:620px;color:var(--ink-2);font-size:clamp(16px,2.1vw,19px);margin:0}
+.scrollcue{margin-top:64px;display:flex;align-items:center;gap:12px;color:var(--ink-3);font-size:13px;letter-spacing:.1em}
+.scrollcue .ln{width:52px;height:1px;background:linear-gradient(90deg,var(--copper),transparent);animation:slide 2.4s ease-in-out infinite}
+@keyframes slide{0%,100%{transform:translateX(0);opacity:.4}50%{transform:translateX(10px);opacity:1}}
+
+/* ---------- sections ---------- */
+section{padding-block:88px;border-top:1px solid rgba(255,247,238,.07)}
+.tag{display:flex;align-items:center;gap:14px;margin:0 0 36px}
+.tag .no{font-family:var(--serif);font-size:13px;color:var(--copper);letter-spacing:.1em}
+.tag h2{font-size:14px;letter-spacing:.2em;color:var(--ink-2);margin:0;font-weight:600}
+.tag .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.lead{font-family:var(--serif);font-weight:500;font-size:clamp(20px,3.2vw,27px);line-height:1.62;letter-spacing:-.02em;margin:0 0 26px}
+.body{max-width:660px}
+.body p{color:var(--ink-2);margin:0 0 18px}
+.body p:last-child{margin-bottom:0}
+.body strong{color:var(--ink);font-weight:600}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:1.5px;background:linear-gradient(180deg,var(--copper),rgba(229,168,106,.25),transparent)}
+.tl .item{position:relative;padding-bottom:34px}
+.tl .item:last-child{padding-bottom:0}
+.tl .item::before{
+  content:"";position:absolute;left:-34px;top:9px;width:16px;height:16px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--copper);box-shadow:0 0 0 5px rgba(217,125,78,.08)
+}
+.tl .m{font-family:var(--serif);font-size:13px;letter-spacing:.14em;color:var(--amber);display:block;margin-bottom:4px}
+.tl h3{font-size:20px;margin:0 0 8px;font-weight:700;letter-spacing:-.02em}
+.tl p{margin:0;color:var(--ink-2);font-size:16px}
+
+/* ---------- cards ---------- */
+.stack{display:grid;gap:18px}
+.card{
+  position:relative;border:1px solid var(--line);border-radius:20px;padding:30px 32px;
+  background:var(--card);overflow:hidden;
+  transition:transform .45s cubic-bezier(.2,.8,.2,1),background .45s,border-color .45s;
+}
+.card::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--copper);
+  opacity:.5;transition:opacity .45s;
+}
+.card:hover{transform:translateY(-4px);background:var(--card-hi);border-color:rgba(229,168,106,.34)}
+.card:hover::before{opacity:1}
+.card h3{font-family:var(--serif);font-size:22px;margin:0 0 6px;font-weight:700;letter-spacing:-.02em}
+.card .when{font-size:13px;color:var(--amber);letter-spacing:.1em;margin:0 0 14px}
+.card p{margin:0;color:var(--ink-2)}
+.card .scene{
+  margin-top:16px;padding-top:16px;border-top:1px dashed rgba(255,247,238,.12);
+  font-size:15.5px;color:var(--ink-3);line-height:1.75;
+}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:720px){.two{grid-template-columns:1fr}}
+.off::before{background:#5d6b80}
+.off h3{color:var(--ink-2)}
+ul.tick{list-style:none;margin:0;padding:0}
+ul.tick li{position:relative;padding-left:22px;margin-bottom:11px;color:var(--ink-2);font-size:16px}
+ul.tick li:last-child{margin-bottom:0}
+ul.tick li::before{content:"";position:absolute;left:0;top:12px;width:9px;height:1.5px;background:var(--copper)}
+.off ul.tick li::before{background:#5d6b80}
+
+/* ---------- quotes ---------- */
+.quotes{display:grid;gap:18px}
+.q{
+  position:relative;border:1px solid var(--line);border-radius:20px;padding:34px 32px 28px;
+  background:var(--card);
+  transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s;
+}
+.q:hover{transform:translateY(-4px);border-color:rgba(229,168,106,.34)}
+.q .mark{
+  position:absolute;top:-6px;right:22px;font-family:var(--serif);font-size:88px;line-height:1;
+  color:rgba(255,247,238,.07);pointer-events:none;
+}
+.q p{font-family:var(--serif);font-size:18px;line-height:1.78;margin:0 0 16px;color:var(--ink);letter-spacing:-.01em}
+.q cite{font-style:normal;font-size:14px;color:var(--ink-3);letter-spacing:.04em}
+
+/* ---------- footer ---------- */
+footer{padding-block:64px 96px;border-top:1px solid rgba(255,247,238,.07);color:var(--ink-3);font-size:14.5px}
+footer .sig{font-family:var(--serif);font-size:26px;color:var(--ink);margin:0 0 22px;letter-spacing:-.02em}
+footer p{margin:0 0 10px;max-width:560px}
+footer .stamp{margin-top:26px;font-size:13px;letter-spacing:.14em;color:var(--ink-3)}
+
+/* ---------- T12 additions ---------- */
+h1.name{margin:0 0 14px}
+.hero p.oneline{font-family:var(--serif);font-weight:700;font-size:clamp(24px,4.2vw,40px);line-height:1.4;letter-spacing:-.02em;color:var(--ink);max-width:none;margin:0 0 28px}
+.doors{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
+.doors a{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;font-size:15px;background:var(--card);transition:background .3s,border-color .3s}
+.doors a:hover{background:var(--card-hi);border-color:rgba(229,168,106,.4)}
+.doors .n{font-family:var(--serif);font-size:12px;color:var(--copper);letter-spacing:.1em}
+.story p{font-size:17px}
+.story .lead.end{margin:30px 0 18px}
+.d{font-family:var(--serif);color:var(--amber);font-weight:700;margin-right:4px}
+.ab{display:inline-block;font-size:11.5px;letter-spacing:.06em;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--ink-3);vertical-align:2px;margin-left:2px}
+.ab.s{border-color:rgba(127,176,160,.45);color:#9cc5b6}
+.ab.r{border-color:rgba(229,168,106,.45);color:var(--amber)}
+.ab.m{border-color:rgba(209,113,74,.5);color:#e09272}
+.fine{font-size:13.5px;color:var(--ink-3);line-height:1.7}
+.lead.small{font-size:clamp(17px,2.4vw,21px);color:var(--ink-2)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:8px 0 18px}
+.num{border:1px solid var(--line);border-radius:18px;padding:22px 22px 18px;background:var(--card)}
+.num .v{font-family:var(--serif);font-size:38px;font-weight:900;line-height:1.1;color:var(--ink);letter-spacing:-.02em}
+.num .v small{font-size:16px;color:var(--ink-2);font-weight:500;margin-left:4px}
+.num .k{font-size:15px;color:var(--ink-2);margin:8px 0 6px}
+.num .src{font-size:12px;color:var(--ink-3);line-height:1.5}
+.pair{margin:0 0 18px}
+.pair:empty{display:none}
+.picked h4{font-size:14px;letter-spacing:.14em;color:var(--ink-2);margin:26px 0 10px;font-weight:600}
+.picked ul{list-style:none;margin:0;padding:0}
+.picked li{border-left:2px solid var(--line);padding:4px 0 4px 16px;margin:0 0 10px;color:var(--ink-2);font-size:15.5px}
+.picked li b{font-family:var(--serif);color:var(--amber);font-weight:700;margin-right:8px;font-size:13.5px}
+.lnk{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(229,168,106,.35)}
+.lnk:hover{border-bottom-color:var(--amber)}
+.contact{display:inline-flex;align-items:center;gap:8px;margin:4px 0 14px;font-size:16px}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .dot,.ln{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="wrap">
+
+  <header class="hero">
+    <h1 class="name">강혜성</h1>
+    <p class="oneline">막힌 곳이 있으면 뚫릴 때까지 파고드는 사람</p>
+    <p>2016년 훈련소 5주에서 처음 '하면 되는 사람'이 됐고, 2026년 여름 안정된 자리를 나와 ALEPH 과정에서 다시 파고드는 중입니다.</p>
+    <nav class="doors" aria-label="바로 가기">
+      <a href="#story"><span class="n">01</span>이야기</a>
+      <a href="#numbers"><span class="n">02</span>숫자</a>
+      <a href="#works"><span class="n">03</span>대표작</a>
+      <a href="#resume"><span class="n">04</span>이력서</a>
+    </nav>
+  </header>
+
+  <section class="rv" id="story">
+    <div class="tag"><span class="no">01</span><h2>이야기 · 넘어진 다음 날</h2><span class="rule"></span></div>
+    <div class="body story">
+      <p class="lead">저는 인간 드릴입니다. 막힌 곳이 있으면 뚫릴 때까지 파고듭니다.</p>
+
+      <p><span class="d">2016년 7월</span> 스물한 살의 저는 12사단 신병교육대대에 들어갔습니다. 그 전 1년은 흐릿했습니다. 1학년 1학기를 마치고 군대에 가려고 휴학했지만 입대 날짜는 계속 밀렸고, 그동안 치킨집·당구장·호프집을 돌며 번 돈은 모으지 못하고 다 써 버렸습니다. 살은 많이 쪄 있었고, 뭘 해야 할지 모르는 무력감이 계속 따라다녔습니다.</p>
+
+      <p>그런 저에게 훈련소 5주는 희망이었습니다. 옆자리 동기가 쉬는 시간마다, 자기 전에도 팔굽혀펴기와 윗몸일으키기를 하는 걸 보고 "군대까지 왔는데 나도 달라져 보자" 하며 따라 했습니다. 주말과 정비시간에는 체력운동, 유산소, 줄넘기까지 했습니다. 거창한 계획은 없었습니다. 꾸준히 반복했을 뿐입니다. 5주 뒤 12kg이 빠져 있었고, 그때 처음 알았습니다. '나는 하면 할 수 있는 사람이구나.' <span class="ab m">자기동기력</span></p>
+
+      <p>그 힘은 10년 뒤에 다시 나왔습니다. 누가 와도 저를 대체할 수 있는 부품 같다고 느끼던 회사에서, <span class="d">2026년 7월 말</span> 부모님 앞에 앉아 처음으로 "저거 하고 싶어요"라고 말했습니다. 부모님과 여자친구가 저를 믿어 줬고, 저는 회사를 그만두고 ALEPH 과정에 들어왔습니다. <span class="d">2026년 8월 11일</span> 처음 맡아 본 조장 자리에서 서로 어색해하던 조원들을 대화로 끌어들여 첫 조별 과제를 정리했습니다. <span class="ab r">대인관계력</span></p>
+
+      <p>물론 매일 잘한 건 아닙니다. <span class="d">8월 31일</span> 컨디션 관리에 실패해 수업을 제대로 듣지 못했고, 리추얼 기록에 처음으로 "못 했다"를 눌렀습니다. 다음 날 아침 저는 "오늘은 쉬는시간이고 뭐고 없다! 이해 될때 까지 앉아서 이해하기!"라고 적었고, 그날 저녁 "실천했다"를 눌렀습니다. 사흘 뒤 <span class="d">9월 4일</span>에는 전날 밤 저와 한 약속대로 자전거로 한 시간을 달려 등원했습니다. <span class="ab s">자기조절력</span></p>
+
+      <p><span class="d">9월 7일</span>에는 모르는 단어투성이인 프로젝트 자료를 하나하나 뜻을 찾아 가며 읽었습니다. 그날 저는 "내가 이렇게까지 노력한적은 인생 살면서 처음인거같아! 너무 재밌다!"라고 남겼습니다. <span class="ab m">자기동기력</span></p>
+
+      <p><span class="d">9월 30일</span>에는 초등학교 이후 처음으로 사람들 앞에서 발표를 했습니다. 조를 대표한 프로젝트 중간발표였습니다. 전날 늦게까지 남아 조원들과 준비했고, 당일 아침에는 스트레칭과 심호흡으로 긴장을 눌렀습니다. 실수도 했지만 조원들이 잘했다고 다독여 준 덕분에 무너지지 않았고, 그날 저녁 "팀에게 민폐 끼치지 않는 사람이 되도록 노력해보자"고 적었습니다. <span class="ab r">대인관계력</span> <span class="ab s">자기조절력</span></p>
+
+      <p>저는 안 넘어지는 사람은 아닙니다. 대신 넘어진 다음 날 아침, 뭘 할지부터 먼저 적는 사람입니다. 아직 어느 분야로 갈지는 정하지 않았지만, 어디를 가든 막힌 곳이 있으면 뚫릴 때까지 파고드는 사람으로 일하고 싶습니다.</p>
+
+      <p class="lead end">드릴은 뚫을 벽이 있어야 제 능력을 발휘합니다. 뚫어야 할 곳이 있는 자리라면, 그곳에서 제 쓰임을 증명하겠습니다!</p>
+      <p class="fine">이 이야기는 제가 쓴 3만 자 장편소설(ALEPH 과제 11)에서 장면을 골라, 연출한 대사와 장면을 빼고 실제 있었던 일만 남긴 것입니다. 날짜와 따옴표 속 문장은 제 리추얼 기록 원문입니다.</p>
+    </div>
+  </section>
+
+  <section class="rv" id="numbers">
+    <div class="tag"><span class="no">02</span><h2>숫자 · 13주 기록</h2><span class="rule"></span></div>
+    <p class="lead small">말 대신 기록으로 보여 드립니다. 아래 숫자는 ALEPH에 남은 제 기록에서 자동으로 다시 셉니다.</p>
+    <div class="nums" id="nums"><p class="fine">숫자를 불러오는 중입니다… (site.json)</p></div>
+    <div class="pair card" id="pair"></div>
+    <div id="picked"></div>
+    <p class="fine" id="asof"></p>
+  </section>
+
+  <section class="rv" id="works">
+    <div class="tag"><span class="no">03</span><h2>대표작</h2><span class="rule"></span></div>
+    <div class="two">
+      <div class="card">
+        <p class="when">논문 · ALEPH 과제 10 · 2026년 10월 1일</p>
+        <h3>체크섬 검증이 개인정보 탐지 규칙의 오탐과 미탐에 미치는 영향</h3>
+        <p>카드번호·주민등록번호를 정규식으로 찾는 탐지 규칙에 끝자리 검증을 더하면 어떻게 달라지는지, 합성 데이터 7,000건으로 실험했습니다. Luhn 검사는 카드 오탐률을 100%에서 11.7%로 낮추고 미탐은 만들지 않았습니다. 주민등록번호 검증번호 검사는 오탐을 줄였지만 2020년 10월 이후 형식 번호의 90.8%를 놓쳤습니다.</p>
+        <p class="scene"><a class="lnk" href="T10_paper_kanghyeseong.pdf">논문 PDF 열기 →</a><br>실제 개인정보는 쓰지 않았고, 주민등록번호 생성 스크립트는 공개하지 않습니다.</p>
+      </div>
+      <div class="card off">
+        <p class="when">앱 · ALEPH 마지막 과제 B · 준비 중</p>
+        <h3>논문을 반영한 앱 (자리)</h3>
+        <p>위 논문의 결론을 실제로 쓰는 앱이 이 자리에 들어옵니다. 마지막 과제 B를 마친 뒤 채웁니다.</p>
+        <p class="scene">예정: 2026년 11월, ALEPH 과정 마무리 전</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rv" id="resume">
+    <div class="tag"><span class="no">04</span><h2>이력서 · 자기소개서 · 경력기술서</h2><span class="rule"></span></div>
+    <div class="card">
+      <h3>한 파일로 받아 보세요</h3>
+      <p>이력서, 자기소개서(위 이야기를 지원서 분량으로 다듬은 글), 경력기술서(과제마다 세 능력 중 어디에 해당하는지와 상황·행동·결과)를 한 문서에 담았습니다.</p>
+      <p class="scene"><a class="lnk" href="kanghyeseong_resume.pdf">PDF로 열기 →</a> &nbsp;·&nbsp; <a class="lnk" href="kanghyeseong_resume.docx">Word 파일</a></p>
+    </div>
+  </section>
+
+
+
+  <footer class="rv">
+    <p class="sig">읽어 주셔서 고맙습니다.</p>
+    <p class="contact">연락 · <a class="lnk" href="mailto:tpfkvlahs12@naver.com">tpfkvlahs12@naver.com</a></p>
+    <p>02 숫자 칸은 제 컴퓨터의 작은 장치가 새 기록으로 다시 만들고, 제가 고른 문장만 올라갑니다. 이 사이트에는 저 말고 다른 사람의 실명이 없습니다.</p>
+    <p class="stamp">2026년 10월 · 강혜성</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var bar=document.getElementById('bar');
+  function onScroll(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.width=(h>0?(window.scrollY/h)*100:0)+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>
+(function(){
+  function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function md(s){var p=s.split('-');return (+p[1])+'월 '+(+p[2])+'일'}
+  fetch('site.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(s){
+    var n=s.numbers,a=n.attendance,r=n.ritual,t=n.tasks,box=document.getElementById('nums');
+    box.innerHTML='';
+    [
+      [a.present+'<small>/ '+a.days+'일</small>','확정된 수업일 출석 · 결석 '+a.absent+' · 지각 '+a.late, a.source+', '+md(a.first)+'~'+md(a.last)],
+      [r.both_days+'<small>일</small>','아침·마무리 리추얼을 둘 다 남긴 날', r.source+', '+md(r.first)+'~'+md(r.last)],
+      [r.strength_did+'<small>/ '+r.close_days+'일</small>','"오늘의 강점 행동을 실천했다" (일부 실천 '+r.strength_partly+'일 · 못 했다 '+r.strength_missed+'일)', r.source],
+      [t.approved+'<small>/ '+t.tasks+'개</small>','과제 최종 확인 완료 · 제출 '+t.submissions+'회'+(t.resubmitted.length?' (다시 낸 과제 '+t.resubmitted.join(', ')+')':''), t.source+', '+md(t.first)+'~'+md(t.last)]
+    ].forEach(function(x){var c=el('div','num');c.appendChild(el('div','v',x[0]));c.appendChild(el('div','k',esc(x[1])));c.appendChild(el('div','src','출처: '+esc(x[2])));box.appendChild(c)});
+    var fell=r.bounce_back.filter(function(b){return b.next});
+    if(fell.length){var b=fell[0];document.getElementById('pair').innerHTML=
+      '<p class="when">숫자 ↔ 이야기</p><h3>넘어진 다음 날, '+r.recovered_next_day+' / '+fell.length+'</h3>'+
+      '<p>"못 했다"를 누른 다음 수업일에 다시 "실천했다"를 누른 횟수입니다. 이야기 속 '+md(b.fell)+' → '+md(b.next)+'이 바로 그 장면입니다.'+
+      (r.bounce_back.length>fell.length?' (가장 최근 "못 했다"는 다음 날 기록을 기다리는 중입니다.)':'')+'</p>'+
+      '<p class="scene">출처: '+esc(r.source)+' · 강점 행동 칸</p>'}
+    var pk=document.getElementById('picked'),any=false,box2=el('div','picked');
+    Object.keys(s.paragraphs).sort().forEach(function(k){var p=s.paragraphs[k];if(!p.items.length)return;any=true;
+      box2.appendChild(el('h4',null,esc(p.label)+' · 기록에서 고른 문장'));var ul=el('ul');
+      p.items.forEach(function(it){ul.appendChild(el('li',null,'<b>'+md(it.date)+'</b>'+esc(it.text)+' <span class="fine">('+(it.who==='나'?'내 기록':'동료가 해 준 말')+')</span>'))});box2.appendChild(ul)});
+    if(any)pk.appendChild(box2);
+    document.getElementById('asof').textContent='기준일 '+s.as_of+' · 이 칸은 renew 장치가 만든 site.json을 그대로 보여 줍니다.';
+  }).catch(function(){document.getElementById('nums').innerHTML='<p class="fine">숫자 파일(site.json)을 불러오지 못했습니다.</p>'});
+})();
+</script>
+</body>
+</html>
